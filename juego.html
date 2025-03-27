@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Memoria</title>
+    <link rel="stylesheet" href="Style2.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h2>Juego de Memoria de Colores</h2>
+        <p id="score">Puntaje: 0</p>
+        <button id="startButton">Iniciar Juego</button>
+        
+        <div class="grid">
+            <button class="color-btn" id="btn1"></button>
+            <button class="color-btn" id="btn2"></button>
+            <button class="color-btn" id="btn3"></button>
+            <button class="color-btn" id="btn4"></button>
+            <button class="color-btn" id="btn5"></button>
+            <button class="color-btn" id="btn6"></button>
+            <button class="color-btn" id="btn7"></button>
+            <button class="color-btn" id="btn8"></button>
+            <button class="color-btn" id="btn9"></button>
+        </div>
+
+        <div id="gameOver" class="hidden">
+            <p>¡Has perdido! ¿Quieres intentarlo de nuevo?</p>
+            <button onclick="reiniciarJuego()">Reintentar</button>
+            <button onclick="volverInicio()">Volver al Inicio</button>
+        </div>
+    </div>
+
+    <footer>
+        Hecho por Juan Urriago y Santiago Guzmán
+    </footer>
+
+    <script type="module" src="Proceso.js"></script>
+
+
+
+
+</body>
+</html>
