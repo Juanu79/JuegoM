@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesion</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+        <label for="username">Nombre:</label><br>
+        <input type="text" id="username" placeholder="Ingresa tu nombre"><br>
+        <button onclick="EnviarJuego()">Jugar</button>
+    </div>
+
+    <footer>
+        Hecho por Juan Urriago y Santiago Guzmán
+    </footer>
+
+    <script type="module" src="Proceso.js"></script>
+
+    
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
+    </script>
+    
+
+    
+</body>
+</html>
