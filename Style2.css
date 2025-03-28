@@ -1,4 +1,7 @@
-body {
+/* Estilos generales */
+html, body {
+    width: 100%;
+    overflow-x: hidden;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
@@ -7,7 +10,6 @@ body {
     height: 100vh;
     background-color: #b2dfdb; /* Verde agua claro */
     margin: 0;
-    overflow: hidden; /* Evita scroll innecesario */
 }
 
 .game-container {
@@ -16,23 +18,24 @@ body {
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 90%;
-    max-width: 320px;
+    width: 100%;
+    max-width: 400px;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    margin: 20px auto;
     justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .color-btn {
     width: 80px;
     height: 80px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -46,19 +49,16 @@ footer {
     color: #004d40; /* Verde oscuro */
 }
 
-/* Ajustar la escala en dispositivos pequeños */
-@media (max-width: 480px) {
-    .game-container {
-        width: 95%; /* Asegura que se adapte a la pantalla */
-    }
-
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 400px) {
     .grid {
-        grid-template-columns: repeat(3, 70px);
-        grid-template-rows: repeat(3, 70px);
-        gap: 8px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
     }
 
-    footer {
-        font-size: 12px; /* Reducimos el tamaño de la fuente */
+    .color-btn {
+        width: 60px;
+        height: 60px;
     }
 }
+
