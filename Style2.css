@@ -46,21 +46,19 @@ footer {
     color: #004d40; /* Verde oscuro */
 }
 
-/* Responsividad para móviles */
-@media (max-width: 400px) {
+/* Ajustar la escala en dispositivos pequeños */
+@media (max-width: 480px) {
     .game-container {
-        max-width: 90%;
+        width: 95%; /* Asegura que se adapte a la pantalla */
     }
 
     .grid {
-        grid-template-columns: repeat(3, 60px);
-        grid-template-rows: repeat(3, 60px);
-        gap: 5px;
+        grid-template-columns: repeat(3, 70px);
+        grid-template-rows: repeat(3, 70px);
+        gap: 8px;
     }
 
-    .color-btn {
-        width: 60px;
-        height: 60px;
+    footer {
+        font-size: 12px; /* Reducimos el tamaño de la fuente */
     }
 }
-
