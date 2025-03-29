@@ -1,7 +1,4 @@
-/* Estilos generales */
-html, body {
-    width: 100%;
-    overflow-x: hidden;
+body {
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
@@ -10,6 +7,7 @@ html, body {
     height: 100vh;
     background-color: #b2dfdb; /* Verde agua claro */
     margin: 0;
+    overflow: hidden; /* Evita scroll innecesario */
 }
 
 .game-container {
@@ -18,24 +16,23 @@ html, body {
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 100%;
-    max-width: 400px;
+    width: 90%;
+    max-width: 320px;
 }
 
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    margin: 20px auto;
     justify-content: center;
-    align-items: center;
-    width: 100%;
 }
 
 .color-btn {
     width: 80px;
     height: 80px;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -49,10 +46,15 @@ footer {
     color: #004d40; /* Verde oscuro */
 }
 
-/* Responsividad para pantallas pequeñas */
+/* Responsividad para móviles */
 @media (max-width: 400px) {
+    .game-container {
+        max-width: 90%;
+    }
+
     .grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 60px);
+        grid-template-rows: repeat(3, 60px);
         gap: 5px;
     }
 
@@ -61,4 +63,3 @@ footer {
         height: 60px;
     }
 }
-
